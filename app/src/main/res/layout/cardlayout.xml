@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="#df4375"
+        android:innerRadius="0dp"
+        android:thicknessRatio="1.9">
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/MissedName"
+                android:textColor="#FFFFFF"
+                android:layout_below="@id/MissedEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Abishek Singh" />
+
+            <TextView
+                android:id="@+id/MissedClass"
+                android:textColor="#FFFFFF"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/MissedName"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="20dp"
+                />
+
+            <ImageView
+                android:id="@+id/MissedEdit"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="20dp"
+                android:layout_toStartOf="@id/MissedDelete"
+                android:src="@drawable/ic_edit_black_24dp" />
+
+            <ImageView
+                android:id="@+id/MissedDelete"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="20dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_delete_black_24dp" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

@@ -48,6 +48,8 @@ private UpcomingAdapter upcomingAdapter;
     private void adddata() {
         objs.add(new Obj("Aditya", "Grade 9 topper", "828175987"));
         objs.add(new Obj("Aditya", "Grade 9 topper", "828175987"));
+        objs.add(new Obj("Aditya","Grade 9 topper","828175987"));
+        objs.add(new Obj("Aditya","Grade 9 topper","828175987"));
         upcomingAdapter.notifyDataSetChanged();
     }
 

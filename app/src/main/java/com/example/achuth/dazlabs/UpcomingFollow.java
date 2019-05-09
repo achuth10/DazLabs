@@ -8,6 +8,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageButton;
 
 import java.util.ArrayList;
 
@@ -17,6 +19,7 @@ import java.util.ArrayList;
  */
 public class UpcomingFollow extends Fragment {
 private RecyclerView upcoming;
+private ImageButton whatsaap,phone;
 private ArrayList <Obj> objs;
 private UpcomingAdapter upcomingAdapter;
 
@@ -46,10 +49,10 @@ private UpcomingAdapter upcomingAdapter;
 
 
     private void adddata() {
-        objs.add(new Obj("Aditya", "Grade 9 topper", "828175987"));
-        objs.add(new Obj("Aditya", "Grade 9 topper", "828175987"));
-        objs.add(new Obj("Aditya","Grade 9 topper","828175987"));
-        objs.add(new Obj("Aditya","Grade 9 topper","828175987"));
+        objs.add(new Obj("Aditya Kapoor", "Class 11th-Topper", "828175987"));
+        objs.add(new Obj("Aditya Kapoor", "Class 11th-Topper", "828175987"));
+        objs.add(new Obj("Aditya Kapoor","Class 11th-Topper","828175987"));
+        objs.add(new Obj("Aditya Kapoor","Class 11th-Topper","828175987"));
         upcomingAdapter.notifyDataSetChanged();
     }
 

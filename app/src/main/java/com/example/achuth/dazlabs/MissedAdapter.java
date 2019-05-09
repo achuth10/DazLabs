@@ -1,6 +1,8 @@
 package com.example.achuth.dazlabs;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -57,7 +59,19 @@ public class MissedAdapter extends RecyclerView.Adapter <MissedAdapter.MissedHol
 
         @Override
         public void onClick(View v) {
-            deleteItem(getAdapterPosition());
+            AlertDialog.Builder builder=new AlertDialog.Builder(context);
+            builder.setTitle("Delete lead");
+            builder.setMessage("Are you sure you want to delete this lead?");
+            builder.setPositiveButton("Delete", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    deleteItem(getAdapterPosition());
+                }
+            });
+            builder.setNegativeButton("Cancel",null);
+            builder.setIcon(R.drawable.ic_warning_black_24dp);
+            AlertDialog alertDialog =builder.create();
+            alertDialog.show();
         }
     }
 

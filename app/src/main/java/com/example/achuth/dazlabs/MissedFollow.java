@@ -42,10 +42,10 @@ public class MissedFollow extends Fragment {
     }
 
     private void adddata() {
-        objs.add(new Obj("Aditya","Grade 9 topper","828175987"));
-        objs.add(new Obj("Aditya","Grade 9 topper","828175987"));
-        objs.add(new Obj("Aditya","Grade 9 topper","828175987"));
-        objs.add(new Obj("Aditya","Grade 9 topper","828175987"));
+        objs.add(new Obj("Aditya Kapoor","Class 11th-Topper","828175987"));
+        objs.add(new Obj("Aditya Kapoor","Class 11th-Topper","828175987"));
+        objs.add(new Obj("Aditya Kapoor","Class 11th-Topper","828175987"));
+        objs.add(new Obj("Aditya Kapoor","Class 11th-Topper","828175987"));
         missedAdapter.notifyDataSetChanged();
 
     }

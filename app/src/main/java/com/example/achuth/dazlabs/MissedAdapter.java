@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -66,6 +67,7 @@ public class MissedAdapter extends RecyclerView.Adapter <MissedAdapter.MissedHol
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
                     deleteItem(getAdapterPosition());
+                    Toast.makeText(context,"Deleted",Toast.LENGTH_SHORT).show();
                 }
             });
             builder.setNegativeButton("Cancel",null);

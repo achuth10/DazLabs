@@ -43,12 +43,12 @@
                     />
 
                 <ImageView
-                    android:id="@+id/UpcomingDelete"
+                    android:id="@+id/Upcomingedit"
                     android:layout_width="20dp"
                     android:layout_height="30dp"
                     android:layout_marginEnd="20dp"
                     android:layout_alignParentEnd="true"
-                    android:src="@drawable/delete_black_24dp" />
+                    android:src="@drawable/editblack_24dp" />
             </RelativeLayout>
             <LinearLayout
                 android:layout_width="match_parent"
